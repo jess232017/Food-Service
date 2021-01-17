@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff03a9f4</color>
+    <color name="colorPrimaryDark">#ff5c6bc0</color>
+    <color name="colorAccent">#2196F3</color>
+    <color name="colorAccentDark">#ff7ab439</color>
+    <color name="colorAccentLight">#ffd500f9</color>
+    <color name="colorPrimaryLight">#ff9ecc66</color>
+
+    <color name="TextColorWhite">#ffffff</color>
+
+    <color name="indigo_900">#ff1a237e</color>
+    <color name="light_blue_50">#ffe1f5fe</color>
+    <color name="light_blue_100">#ffb3e5fc</color>
+    <color name="light_blue_200">#ff81d4fa</color>
+    <color name="light_blue_500">#ff03a9f4</color>
+    <color name="light_grey_txt">#ffa6a6a6</color>
+    <color name="geryTxt">#ff858585</color>
+    <color name="BotonLogin">#FFEB3B</color>
+    <color name="BotonAgregar">#03A9F4</color>
+    <color name="colorBorder">#FFA7A4A4</color>
+    <color name="colorBlack">#FF000000</color>
+    <color name="colorWhite">#FFFFFFFF</color>
+    <color name="colorBlue">#ff0061c7</color>
+    <color name="orange_400">#ffffa726</color>
+    <color name="red_300">#ffe57373</color>
+    <color name="grey_5">#fff2f2f2</color>
+    <color name="grey_10">#ffe6e6e6</color>
+    <color name="grey_20">#ffcccccc</color>
+    <color name="grey_40">#ff999999</color>
+    <color name="grey_60">#ff666666</color>
+    <color name="grey_90">#ff263238</color>
+    <color name="light_green_600">#ff7cb342</color>
+    <color name="blue_grey_300">#ff90a4ae</color>
+    <color name="blue_grey_800">#ff37474f</color>
+    <color name="purple_A400">#ffd500f9</color>
+    <color name="purple_A700">#ffaa00ff</color>
+    <color name="indigo_400">#ff5c6bc0</color>
+    <color name="light_green_500">#ff8bc34a</color>
+    <color name="colorGrayan">#E4E4E4</color>
+    <color name="colorOrder">#E8321D</color>
+    <color name="deep_orange_500">#ffff5722</color>
+    <color name="deep_purple_700">#ff512da8</color>
+    <color name="overlay_light_10">#1affffff</color>
+    <color name="overlay_light_30">#4dffffff</color>
+    <color name="overlay_dark_10">#1a000000</color>
+    <color name="overlay_dark_30">#4d000000</color>
+    <color name="overlay_blue_30">#E12196F3</color>
+    <color name="blue_grey_400">#ff78909c</color>
+    <color name="red_400">#ffef5350</color>
+    <color name="deep_purple_500">#ff673ab7</color>
+    <color name="twitter">#23C4FF</color>
+    <color name="grey_80">#ff37474f</color>
+    <color name="bg_blue">#ff318cf7</color>
+</resources>

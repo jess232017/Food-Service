@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#fff9f9f9"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#fff9f9f9"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13.0sp"
+        android:layout_marginTop="25.0dip"
+        android:layout_marginRight="13.0sp"
+        android:layout_marginBottom="13.0sp">
+        <TextView
+            android:id="@+id/orderID"
+            android:text="@string/order_number_98287324"
+            android:maxLines="1"
+            android:layout_width="0.0dip"
+            android:layout_weight="1.0"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:textSize="13.0sp" />
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/RippleStyleBlack">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/order_tracking"
+                android:text="@string/view_detail"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorBlue"
+                android:textSize="13.0sp" />
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+    </LinearLayout>
+
+    <View
+        android:background="#ffcacaca"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="13.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3.0dip"
+            android:layout_marginBottom="3.0dip">
+
+            <TextView
+                android:layout_width="90.0dip"
+                android:layout_height="wrap_content"
+                android:textColor="#66000000"
+                android:text="@string/cliente_"
+                android:textSize="13.0sp" />
+
+            <TextView
+                android:id="@+id/order_name"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:layout_marginStart="40.0dip"
+                android:layout_weight="1.0"
+                android:text="@string/fakename"
+                android:maxLines="1"
+                android:textSize="13.0sp"
+                android:layout_marginEnd="@dimen/dimen_2dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pay_status"
+                android:textColor="#ffc77300"
+                android:textSize="13.0sp"
+                android:text="Pagar?"/>
+
+        </LinearLayout>
+
+        <View
+            android:background="#7bcacaca"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="13.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3.0dip"
+            android:layout_marginBottom="3.0dip">
+
+            <TextView
+                android:layout_width="90.0dip"
+                android:layout_height="wrap_content"
+                android:textColor="#66000000"
+                android:text="@string/deliv"
+                android:textSize="13.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dev_date"
+                android:textColor="@color/colorBlack"
+                android:layout_marginStart="40.0dip"
+                android:text="@string/date"
+                android:maxLines="1"
+                android:textSize="13.0sp" />
+        </LinearLayout>
+
+        <View
+            android:background="#7bcacaca"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="13.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3.0dip"
+            android:layout_marginBottom="3.0dip">
+
+            <TextView
+                android:layout_width="90.0dip"
+                android:layout_height="wrap_content"
+                android:textColor="#66000000"
+                android:text="@string/pay_day"
+                android:textSize="13.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pay_date"
+                android:textColor="@color/colorBlack"
+                android:layout_marginStart="40.0dip"
+                android:text="@string/date"
+                android:maxLines="1"
+                android:textSize="13.0sp" />
+        </LinearLayout>
+
+        <View
+            android:background="#7bcacaca"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="13.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3.0dip"
+            android:layout_marginBottom="3.0dip">
+
+            <TextView
+                android:layout_width="90.0dip"
+                android:layout_height="wrap_content"
+                android:textColor="#66000000"
+                android:text="@string/pricendate"
+                android:textSize="13.0sp" />
+
+            <TextView
+                android:id="@+id/order_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:layout_marginStart="40.0dip"
+                android:text="@string/price"
+                android:maxLines="1"
+                android:textSize="13.0sp" />
+        </LinearLayout>
+
+        <View
+            android:background="#7bcacaca"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip" />
+    </LinearLayout>
+</LinearLayout>

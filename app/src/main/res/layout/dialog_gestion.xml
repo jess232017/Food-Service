@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/grey_5"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="fill_parent">
+
+            <ImageButton
+                android:id="@+id/bt_close"
+                android:background="?selectableItemBackgroundBorderless"
+                android:layout_width="?actionBarSize"
+                android:layout_height="?actionBarSize"
+                android:tint="@android:color/white"
+                app:srcCompat="@drawable/ic_close"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:text="@string/example_event"
+                android:layout_weight="1.0"
+                android:id="@+id/Title"/>
+
+            <ImageButton
+                android:id="@+id/info"
+                android:background="?selectableItemBackgroundBorderless"
+                android:layout_width="?actionBarSize"
+                android:layout_height="?actionBarSize"
+                android:tint="@android:color/white"
+                app:srcCompat="@drawable/ic_info"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/spacing_large" />
+
+        <ImageView
+            android:id="@id/image"
+            android:layout_gravity="center"
+            android:layout_width="90.0dip"
+            android:layout_height="90.0dip"
+            android:src="@drawable/ic_restaurant"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+            android:layout_gravity="center"
+            android:textColor="@color/grey_90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_middle"
+            android:text="@string/Fritanga_Name" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/spacing_medium"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="@dimen/spacing_large"
+                android:layout_height="@dimen/spacing_large"
+                android:layout_marginEnd="@dimen/spacing_medium"
+                android:tint="@color/grey_40"
+                app:srcCompat="@drawable/ic_location"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/grey_40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/direction" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/spacing_large" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="@dimen/spacing_large">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minWidth="100.0dip"
+                android:orientation="vertical">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fabCliente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tint="@color/grey_80"
+                    app:backgroundTint="@android:color/white"
+                    app:elevation="1.0dip"
+                    app:fabSize="normal"
+                    app:srcCompat="@drawable/ic_person" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:text="@string/client"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minWidth="100.0dip"
+                android:orientation="vertical">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fabProducto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tint="@color/grey_80"
+                    app:backgroundTint="@android:color/white"
+                    app:elevation="1.0dip"
+                    app:fabSize="normal"
+                    app:srcCompat="@drawable/ic_shopping" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:text="@string/producto"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minWidth="100.0dip"
+                android:orientation="vertical">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fabReporte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tint="@color/grey_80"
+                    app:backgroundTint="@android:color/white"
+                    app:elevation="1.0dip"
+                    app:fabSize="normal"
+                    app:srcCompat="@drawable/ic_settings" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:text="@string/profile"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/spacing_large" />
+    </LinearLayout>
+</LinearLayout>

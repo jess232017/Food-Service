@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/parent_view"
+    android:background="@color/grey_5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.Reporte.RCliente_Activity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:background="@color/grey_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0.0dip">
+
+        <androidx.appcompat.widget.Toolbar
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:id="@id/toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="?actionBarSize"
+            app:contentInsetStartWithNavigation="0.0dip"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/Toolbar.Light" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_content"
+        android:scrollbars="none"
+        android:clipToPadding="false"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollingCache="true"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:paddingLeft="@dimen/spacing_large"
+            android:paddingRight="@dimen/spacing_large"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/colorWhite"
+                    app:cardCornerRadius="6.0dip"
+                    app:cardElevation="2.0dip"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/image"
+                            android:src="@drawable/image_shop_1"
+                            android:background="@color/grey_40"
+                            android:layout_width="match_parent"
+                            android:layout_height="160.0dip"
+                            android:foreground="@color/overlay_blue_30"
+                            android:scaleType="centerCrop"
+                            tools:targetApi="m"
+                            tools:ignore="ContentDescription,UnusedAttribute" />
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/spacing_xmlarge">
+
+                                <View
+                                    android:layout_width="@dimen/spacing_large"
+                                    android:layout_height="0.0dip" />
+
+                                <TextView
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/light_blue_100"
+                                    android:gravity="center_vertical"
+                                    android:layout_width="0.0dip"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/user"
+                                    android:id="@+id/name"
+                                    android:layout_weight="1.0"
+                                    app:fontFamily="sans-serif-medium"
+                                    android:maxLines="1"/>
+
+                                <com.balysv.materialripple.MaterialRippleLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    style="@style/RippleStyleWhite">
+
+                                    <ImageButton
+                                        android:background="?selectableItemBackgroundBorderless"
+                                        android:id="@+id/NuevaOrden"
+                                        android:layout_width="@dimen/spacing_xmlarge"
+                                        android:layout_height="@dimen/spacing_xmlarge"
+                                        android:tint="@color/light_blue_100"
+                                        app:srcCompat="@drawable/ic_plus"
+                                        tools:ignore="ContentDescription"
+                                        android:backgroundTint="@color/colorWhite"/>
+
+                                </com.balysv.materialripple.MaterialRippleLayout>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="0.0dip"
+                                android:layout_height="@dimen/spacing_middle" />
+
+                            <TextView
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                android:textColor="@color/light_blue_50"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/deuda_actual" />
+
+                            <TextView
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1"
+                                android:textColor="@android:color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/peek"
+                                android:maxLines="1"
+                                app:fontFamily="sans-serif-medium" />
+
+                            <TextView
+                                android:id="@id/phone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Phone"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                android:textColor="@color/light_blue_200"
+                                android:maxLines="1"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/spacing_small" />
+
+                <TextView
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+                    android:textColor="@color/grey_40"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_middle"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:text="@string/registro"
+                    app:fontFamily="sans-serif-medium" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/spacing_large" />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="@color/grey_5"
+                app:cardCornerRadius="0.0dip"
+                app:cardElevation="4.0dip">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:orientation="vertical"
+                    android:id="@+id/order_history"
+                    android:scrollbars="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollingCache="true"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

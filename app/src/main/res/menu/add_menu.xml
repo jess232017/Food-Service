@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/AddMenu"
+        android:icon="@drawable/ic_increase"
+        android:iconTint="@color/grey_60"
+        app:showAsAction="always"
+        android:title="@string/add"
+        tools:targetApi="o" />
+</menu>

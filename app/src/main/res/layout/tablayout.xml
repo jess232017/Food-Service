@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    android:background="@android:color/white"
+    android:id="@+id/appBarLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.Toolbar
+        xmlns:local="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?actionBarSize"
+        local:layout_scrollFlags="enterAlways|scroll"
+        local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        local:theme="@style/Toolbar.Light">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Fritanga_Name"
+            android:textSize="16.7sp"
+            android:fontFamily="@font/nunito_black"
+            android:layout_gravity="center"
+            android:textColor="@color/grey_60"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/bg_blue"
+        app:tabIndicatorHeight="1.6999817dip"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/colorBlack"
+        app:tabTextAppearance="@style/MyCustomTextAppearance"
+        app:tabTextColor="@color/geryTxt">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/food" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/drinks" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/Extra" />
+
+    </com.google.android.material.tabs.TabLayout>
+</com.google.android.material.appbar.AppBarLayout>

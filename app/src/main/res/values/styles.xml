@@ -1,0 +1,108 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorWhite</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+
+    <style name="AppThemeNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!--<item name="android:windowFullscreen">true</item>-->
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="RaisedButtonDark" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="EditTextWhite" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">@color/TextColorWhite</item>
+        <item name="android:textSize">@dimen/edittext_textsize_login</item>
+        <item name="android:textColorPrimary">@color/TextColorWhite</item>
+        <item name="colorAccent">@color/TextColorWhite</item>
+        <item name="colorControlNormal">@color/TextColorWhite</item>
+        <item name="colorControlActivated">@color/TextColorWhite</item>
+    </style>
+
+    <style name="EditTextBlack" parent="TextAppearance.AppCompat.Display1">
+        <item name="android:textColorHint">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/edittext_textsize_login</item>
+        <item name="android:textColorPrimary">@color/colorBlack</item>
+        <item name="colorAccent">@color/colorBlack</item>
+        <item name="colorControlNormal">@color/colorBlack</item>
+        <item name="colorControlActivated">@color/colorBlack</item>
+    </style>
+
+    <style name="EditText.Grey" parent="@style/AppTheme">
+        <item name="colorControlActivated">@color/grey_60</item>
+        <item name="colorControlHighlight">@color/grey_60</item>
+        <item name="colorControlNormal">@color/grey_40</item>
+    </style>
+
+    <style name="Toolbar.Light" parent="@style/AppTheme">
+        <item name="android:textColorPrimary">@color/grey_60</item>
+        <item name="colorControlNormal">@color/grey_60</item>
+    </style>
+
+    <style name="RippleStyleWhite">
+        <item name="mrl_rippleAlpha">0.2</item>
+        <item name="mrl_rippleColor">#80ffffff</item>
+        <item name="mrl_rippleHover">true</item>
+        <item name="mrl_rippleOverlay">true</item>
+    </style>
+
+    <style name="RippleStyleBlack" parent="@style/RippleStyleWhite">
+        <item name="mrl_rippleColor">#8096989a</item></style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Button" parent="android:Widget.Material.Button.Borderless">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/TextColorWhite</item>
+        <item name="android:paddingLeft">@dimen/dimen_48dp</item>
+        <item name="android:paddingRight">@dimen/dimen_48dp</item>
+        <item name="android:paddingTop">@dimen/dimen_8dp</item>
+        <item name="android:paddingBottom">@dimen/dimen_8dp</item>
+        <item name="android:background">@drawable/stroke_button</item>
+        <item name="android:minHeight">@dimen/dimen_0dp</item>
+        <item name="android:minWidth">@dimen/dimen_0dp</item>
+    </style>
+
+    <style name="MyCustomTextAppearance" parent="@style/TextAppearance.Design.Tab">
+        <item name="android:textAllCaps">true</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TextLabel" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColorHint">@color/colorBlack</item>
+        <item name="android:inputType">text</item>
+        <item name="colorAccent">@color/geryTxt</item>
+        <item name="colorControlActivated">@color/geryTxt</item>
+        <item name="colorControlNormal">@color/colorBlack</item>
+    </style>
+
+    <style name="EditText.Flat.Grey" parent="@style/AppTheme">
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Subhead</item>
+        <item name="android:textColor">@color/grey_90</item>
+        <item name="android:textColorHint">@color/grey_40</item>
+    </style>
+</resources>

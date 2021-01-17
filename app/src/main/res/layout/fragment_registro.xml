@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingTop="27.899994dip"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:id="@id/nested_scroll_view"
+            android:background="@android:color/white"
+            android:scrollbars="none"
+            android:clipToPadding="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollingCache="true">
+
+            <LinearLayout android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:theme="@style/TextLabel"
+                    android:textColorHint="@color/colorBlack"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30.0dip"
+                    android:hint="@string/user">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/name"
+                        android:focusableInTouchMode="false"
+                        android:textSize="15.0sp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/geryTxt"
+                        android:background="@color/transparent"
+                        android:paddingTop="10.0dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:maxLength="40"
+                        android:drawablePadding="10.0dip"
+                        android:inputType="none" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:background="#ffececec"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginLeft="30.0dip"
+                    android:layout_marginTop="9.5dip"
+                    android:layout_marginRight="30.0dip"
+                    android:layout_marginBottom="10.0dip" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:theme="@style/TextLabel"
+                    android:textColorHint="@color/colorBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30.0dip"
+                    android:hint="@string/Telefono">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/phone"
+                        android:textSize="15.0sp"
+                        android:focusableInTouchMode="false"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/geryTxt"
+                        android:background="@color/transparent"
+                        android:paddingTop="10.0dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:maxLength="8"
+                        android:drawablePadding="10.0dip"
+                        android:inputType="none" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:background="#ffececec"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginLeft="30.0dip"
+                    android:layout_marginTop="9.5dip"
+                    android:layout_marginRight="30.0dip"
+                    android:layout_marginBottom="10.0dip" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/lytgiven"
+                    android:theme="@style/TextLabel"
+                    android:textColorHint="@color/colorBlack"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30.0dip"
+                    android:hint="@string/fechaEntrega">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:focusableInTouchMode="false"
+                        android:id="@+id/given_date"
+                        android:textSize="15.0sp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/geryTxt"
+                        android:background="@color/transparent"
+                        android:paddingTop="10.0dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:maxLength="10"
+                        android:drawablePadding="10.0dip"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:background="#ffececec"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginLeft="30.0dip"
+                    android:layout_marginTop="9.5dip"
+                    android:layout_marginRight="30.0dip"
+                    android:layout_marginBottom="10.0dip" />
+
+                <LinearLayout
+                    android:layout_marginEnd="30.0dip"
+                    android:layout_marginStart="30.0dip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
+
+                    <RelativeLayout
+                        android:id="@+id/lyType"
+                        android:layout_width="0.0dip"
+                        android:layout_weight="1.0"
+                        android:layout_height="match_parent"
+                        tools:ignore="UselessParent">
+
+                        <LinearLayout
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@drawable/border2"
+                            android:layout_marginTop="20dp">
+
+                            <org.honorato.multistatetogglebutton.MultiStateToggleButton
+                                android:id="@+id/mstb_multi_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/dimen_1dp"
+                                app:mstbPrimaryColor="@color/bg_blue"
+                                app:mstbSecondaryColor="@color/colorWhite"
+                                app:values="@array/FormaPago" />
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-4dp"
+                            android:text="@string/tipo_de_pago"
+                            android:textSize="12.0sp"
+                            android:textColor="@color/colorBlack" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:background="#ffececec"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginLeft="30.0dip"
+                    android:layout_marginTop="9.5dip"
+                    android:layout_marginRight="30.0dip"
+                    android:layout_marginBottom="10.0dip" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:visibility="gone"
+                    android:id="@+id/lytpay"
+                    android:theme="@style/TextLabel"
+                    android:textColorHint="@color/colorBlack"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30.0dip"
+                    android:hint="@string/fechaPago">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:focusableInTouchMode="false"
+                        android:id="@+id/paydate"
+                        android:textSize="15.0sp"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/geryTxt"
+                        android:background="@color/transparent"
+                        android:paddingTop="10.0dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:maxLength="10"
+                        android:drawablePadding="10.0dip"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:id="@+id/view"
+                    android:visibility="gone"
+                    android:background="#ffececec"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginLeft="30.0dip"
+                    android:layout_marginTop="9.5dip"
+                    android:layout_marginRight="30.0dip"
+                    android:layout_marginBottom="10.0dip" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginLeft="30.0dip"
+                    android:layout_marginTop="9.5dip"
+                    android:layout_marginRight="30.0dip"
+                    android:layout_marginBottom="50.0dip" />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/grey_10"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:background="@color/bg_blue"
+        android:layout_width="fill_parent"
+        android:layout_height="340.0dip">
+
+        <ImageView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/footer_design"
+            android:scaleType="centerCrop"
+            tools:ignore="ContentDescription" />
+            <!--- android:tint="@color/overlay_light_30" -->
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@id/nested_scroll_view"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollingCache="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:descendantFocusability="blocksDescendants"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:contentInsetStartWithNavigation="0.0dip"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16.7sp"
+                    android:layout_marginBottom="@dimen/spacing_mlarge"
+                    android:text="@string/Fritanga_Name"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textColor="@android:color/white" />
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10.0dip">
+
+                <androidx.cardview.widget.CardView
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_middle"
+                    android:layout_marginTop="@dimen/spacing_middle"
+                    android:layout_marginRight="@dimen/spacing_middle"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    app:cardCornerRadius="1.0dip"
+                    app:cardElevation="2.0dip">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/spacing_large"
+                            android:text="@string/start_day"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+                            android:textColor="@color/grey_40" />
+
+                        <LinearLayout
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <View
+                                android:layout_width="@dimen/spacing_xmedium"
+                                android:layout_height="0.0dip" />
+
+                            <ImageButton
+                                android:layout_width="42dp"
+                                android:layout_height="@dimen/spacing_xmlarge"
+                                android:background="@android:color/transparent"
+                                android:clickable="true"
+                                android:tint="@color/grey_40"
+                                app:srcCompat="@drawable/ic_event"
+                                android:focusable="true"
+                                tools:ignore="ContentDescription" />
+
+                            <TextView
+                                android:layout_width="0.0dip"
+                                android:layout_height="20dp"
+                                android:layout_weight="1.0"
+                                android:hint="@string/fecha"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+                                android:textColor="@color/grey_60" />
+                        </LinearLayout>
+
+                        <View
+                            android:background="@color/grey_20"
+                            android:layout_width="fill_parent"
+                            android:layout_height="2.0px"
+                            android:layout_marginLeft="@dimen/spacing_large"
+                            android:layout_marginRight="@dimen/spacing_large"
+                            tools:ignore="PxUsage" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/spacing_large"
+                            android:text="@string/end_day"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+                            android:textColor="@color/grey_40" />
+
+                        <LinearLayout
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <View
+                                android:layout_width="@dimen/spacing_xmedium"
+                                android:layout_height="0.0dip" />
+
+                            <ImageButton
+                                android:layout_width="42dp"
+                                android:layout_height="@dimen/spacing_xmlarge"
+                                android:background="@android:color/transparent"
+                                android:clickable="true"
+                                android:tint="@color/grey_40"
+                                app:srcCompat="@drawable/ic_event"
+                                android:focusable="true"
+                                tools:ignore="ContentDescription" />
+
+                            <TextView
+                                android:layout_width="0.0dip"
+                                android:layout_height="20dp"
+                                android:layout_weight="1.0"
+                                android:hint="@string/fecha"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+                                android:textColor="@color/grey_60" />
+                        </LinearLayout>
+
+                        <View
+                            android:background="@color/grey_20"
+                            android:layout_width="fill_parent"
+                            android:layout_height="2.0px"
+                            android:layout_marginLeft="@dimen/spacing_large"
+                            android:layout_marginRight="@dimen/spacing_large"
+                            tools:ignore="PxUsage" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/spacing_large" />
+
+                        <LinearLayout
+                            android:layout_marginStart="@dimen/spacing_large"
+                            android:layout_marginEnd="@dimen/spacing_large"
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.balysv.materialripple.MaterialRippleLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/RippleStyleWhite">
+
+                                <Button
+                                    android:textColor="@android:color/white"
+                                    android:id="@+id/bt_erase"
+                                    android:background="@color/bg_blue"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:minHeight="?actionBarSize"
+                                    android:text="@string/Filtrar"
+                                    style="@style/Base.Widget.AppCompat.Button.Borderless" />
+                            </com.balysv.materialripple.MaterialRippleLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/spacing_large" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <View android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_small" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

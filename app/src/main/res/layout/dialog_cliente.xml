@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton android:id="@+id/bt_close"
+                android:background="?selectableItemBackgroundBorderless"
+                android:layout_width="?actionBarSize"
+                android:layout_height="?actionBarSize"
+                android:tint="@android:color/white"
+                app:srcCompat="@drawable/ic_close"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:text="@string/example_event"
+                android:layout_weight="1.0"
+                android:id="@+id/Title"/>
+
+            <ImageButton
+                android:id="@+id/bt_save"
+                android:background="?selectableItemBackgroundBorderless"
+                android:layout_width="?actionBarSize"
+                android:layout_height="?actionBarSize"
+                android:tint="@android:color/white"
+                app:srcCompat="@drawable/ic_save"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <androidx.core.widget.NestedScrollView
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:id="@id/nested_scroll_view"
+            android:background="@android:color/white"
+            android:scrollbars="none"
+            android:clipToPadding="false"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollingCache="true">
+
+            <LinearLayout android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:id="@+id/frameLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="155.0dip">
+
+                    <ImageView
+                        android:id="@+id/item_image"
+                        android:adjustViewBounds="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/grey_10"
+                        app:srcCompat="@drawable/ic_person"
+                        tools:ignore="ContentDescription" />
+
+                    <LinearLayout
+                        android:id="@+id/linearView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="@color/twitter"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/layoutButtons"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/dimen_48dp"
+                            android:paddingRight="@dimen/dimen_48dp"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+                            tools:ignore="UselessParent">
+
+                            <com.balysv.materialripple.MaterialRippleLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/RippleStyleWhite">
+                                <Button
+                                    android:id="@+id/btnCamera"
+                                    android:tint="@android:color/white"
+                                    style="@style/Button"
+                                    android:text="@string/lbl_take_camera_picture" />
+                            </com.balysv.materialripple.MaterialRippleLayout>
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/spacing_large"/>
+
+                            <com.balysv.materialripple.MaterialRippleLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/RippleStyleWhite">
+                                <Button
+                                    android:id="@+id/btnGallery"
+                                    android:tint="@android:color/white"
+                                    style="@style/Button"
+                                    android:text="@string/lbl_choose_from_gallery" />
+                            </com.balysv.materialripple.MaterialRippleLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/lyt_form"
+                    android:padding="@dimen/spacing_large"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/spacing_large"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/layoutName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/EditTextBlack"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_account"
+                            android:drawableTint="@color/colorBlack"
+                            android:drawablePadding="@dimen/IconCreateAccountDim"
+                            android:singleLine="true"
+                            android:hint="@string/nombre_del_platilo"
+                            android:inputType="text"
+                            tools:targetApi="m" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/spacing_large"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/layoutApellido"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/EditTextBlack"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/Apellido"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_person_pin"
+                            android:drawablePadding="@dimen/IconCreateAccountDim"
+                            android:singleLine="true"
+                            android:hint="@string/Apellido"
+                            android:inputType="text"
+                            tools:targetApi="m" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/spacing_large"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/layoutphone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/EditTextBlack"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/Phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_phone"
+                            android:drawablePadding="@dimen/IconCreateAccountDim"
+                            android:singleLine="true"
+                            android:hint="@string/Telefono"
+                            android:inputType="number"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/spacing_large"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.balysv.materialripple.MaterialRippleLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/RippleStyleWhite">
+                            <Button android:textColor="@android:color/white"
+                                android:id="@+id/bt_erase"
+                                android:background="@color/purple_A400"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:minHeight="?actionBarSize"
+                                android:text="@string/addUser"
+                                style="@style/Base.Widget.AppCompat.Button.Borderless" />
+                        </com.balysv.materialripple.MaterialRippleLayout>
+                    </LinearLayout>
+
+                    <View android:layout_width="fill_parent"
+                        android:layout_height="@dimen/spacing_large" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fbCamera"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_smlarge"
+            android:tint="@android:color/white"
+            app:backgroundTint="@color/twitter"
+            app:fabSize="normal"
+            app:layout_anchor="@id/lyt_form"
+            app:layout_anchorGravity="end|center|top"
+            app:rippleColor="@android:color/white"
+            app:srcCompat="@drawable/ic_camera"
+            android:focusable="true" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

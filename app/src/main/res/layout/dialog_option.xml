@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing_large"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:id="@id/title" android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo"
+            android:layout_weight="1.0" />
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/grey_40"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px" />
+
+    <LinearLayout android:orientation="vertical"
+        android:padding="@dimen/spacing_large"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/spacing_middle"
+            android:text="@string/cantidad" />
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@color/grey_10"
+            android:padding="@dimen/spacing_middle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/RippleStyleWhite">
+                <ImageView android:id="@+id/img_decrease"
+                    android:background="@color/colorPrimary"
+                    android:padding="@dimen/spacing_middle"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:src="@drawable/ic_decrease" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:gravity="center"
+                android:id="@+id/quantity"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:text="@string/quantity"
+                android:layout_weight="1.0" />
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/RippleStyleWhite">
+
+                <ImageView
+                    android:id="@+id/img_increase"
+                    android:background="@color/colorPrimary"
+                    android:padding="@dimen/spacing_middle"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:src="@drawable/ic_increase"/>
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_large">
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/RippleStyleBlack">
+            <Button android:id="@+id/bt_cancel"
+                android:background="@android:color/transparent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/cancele"
+                style="@style/Base.Widget.AppCompat.Button.Borderless" />
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/RippleStyleBlack">
+            <Button android:id="@+id/bt_save"
+                android:background="@android:color/transparent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/save"
+                style="@style/Base.Widget.AppCompat.Button.Borderless" />
+        </com.balysv.materialripple.MaterialRippleLayout>
+    </LinearLayout>
+</LinearLayout>

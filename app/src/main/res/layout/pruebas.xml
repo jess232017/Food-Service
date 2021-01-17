@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/toolbar" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="100.0dip"
+                android:layout_height="100.0dip"
+                android:layout_marginTop="26.299988dip"
+                android:src="@drawable/card_img"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:textSize="13.299988sp"
+                android:textStyle="normal"
+                android:textColor="@color/light_grey_txt"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_information" />
+
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:tabIndicatorColor="@color/bg_blue"
+                app:tabSelectedTextColor="@color/colorBlack"
+                app:tabTextAppearance="@style/MyCustomTextAppearance"
+                app:tabTextColor="@color/geryTxt"
+                app:tabIndicatorHeight="1.6dip"
+                app:tabPaddingStart="60.0dip"
+                app:tabPaddingEnd="50.0dip"
+                app:tabGravity="fill"
+                app:tabMode="fixed">
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/tabChat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/tipo_de_pago" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/tabStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/pedido" />
+
+            </com.google.android.material.tabs.TabLayout>
+
+            <ScrollView
+                android:scrollbars="none"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="@color/colorWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:textSize="15.0sp"
+        android:textStyle="normal"
+        android:textColor="@color/colorWhite"
+        android:gravity="center_horizontal"
+        android:background="@color/bg_blue"
+        android:paddingTop="16.299988dip"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:text="Save"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

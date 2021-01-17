@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorWhite"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageButton
+        android:id="@+id/bt_back"
+        android:background="?selectableItemBackgroundBorderless"
+        android:layout_width="?actionBarSize"
+        android:layout_height="?actionBarSize"
+        app:srcCompat="@drawable/ic_arrow_back"
+        tools:ignore="ContentDescription"
+        android:tint="@color/grey_60"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="100.0dip"
+            android:layout_height="100.0dip"
+            android:layout_marginTop="23.2dip"
+            android:src="@drawable/card_img"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:textSize="13.299988sp"
+            android:textStyle="normal"
+            android:textColor="@color/light_grey_txt"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_information" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayout"
+            android:background="@color/colorWhite"
+            android:layout_width="fill_parent"
+            android:layout_height="49.69998dip"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/bg_blue"
+            app:tabIndicatorHeight="1.6999817dip"
+            app:tabMode="fixed"
+            app:tabPaddingEnd="50.0dip"
+            app:tabPaddingStart="60.0dip"
+            app:tabSelectedTextColor="@color/colorBlack"
+            app:tabTextAppearance="@style/MyCustomTextAppearance"
+            app:tabTextColor="@color/geryTxt">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/payment" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/pedido" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/colorWhite"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/RippleStyleWhite">
+
+            <Button
+                android:id="@+id/bt_checkout"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_blue"
+                android:minHeight="?actionBarSize"
+                android:onClick="goGuardar"
+                android:text="@string/confirme"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="15.0sp"
+                android:textStyle="normal" />
+        </com.balysv.materialripple.MaterialRippleLayout>
+    </LinearLayout>
+</RelativeLayout>

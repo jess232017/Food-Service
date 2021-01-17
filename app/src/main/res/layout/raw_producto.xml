@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.balysv.materialripple.MaterialRippleLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lyt_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/RippleStyleBlack">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10.0dip"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50.0dip">
+
+            <ImageView
+                android:id="@+id/item_chlid_image"
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:layout_marginStart="5.0dip"
+                android:src="@drawable/ic_restaurant"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15.0dip"
+                android:layout_marginEnd="10.0dip"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <TextView
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textStyle="normal"
+                        android:id="@+id/item_chlid_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ejemplo_nombbre_de_item" />
+
+                    <TextView
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textStyle="normal"
+                        android:textColor="@color/grey_60"
+                        android:id="@+id/item_chlid_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_small"
+                        android:text="@string/comidad" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:visibility="gone"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textStyle="normal"
+                        android:textColor="@color/grey_60"
+                        android:id="@+id/total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/spacing_middle"
+                        android:text="@string/_0_x" />
+
+                    <TextView
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:id="@+id/item_chlid_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/c_50" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:background="@color/colorPrimary"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:src="@drawable/ic_decrease"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:background="@color/colorPrimary"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:src="@drawable/ic_increase"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.balysv.materialripple.MaterialRippleLayout>
